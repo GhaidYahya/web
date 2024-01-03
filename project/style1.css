@@ -1,0 +1,83 @@
+/* Default font properties */
+body,
+h1,
+h2,
+h3,
+p,
+table,
+ul,
+ol {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Background color */
+body {
+  background-color: #e0efff;
+}
+
+/* Headers */
+h1,
+h2,
+h3 {
+  color: #f672b6;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 550px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+
+thead tr:first-child th {
+  background-color: #f672b6;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+td {
+  background-color: #d5efcc;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+tr:nth-child(even) td {
+  background-color: #ffdff0;
+}
+
+tr:nth-child(odd) td {
+  background-color: #d9ead3;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul ul {
+  padding-left: 40px;
+}
+
+ul ul li:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  background-image: url("nested-list-icon.png"); /* Change the image URL */
+  background-size: contain;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ol {
+  list-style-type: lower-alpha;
+}

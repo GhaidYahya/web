@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Article</title>
+</head>
+<body>
+  <h1>Create Article</h1>
+
+  <form action="http://comp334.studentswebprojects.ritaj.ps/util/process.php" method="post">
+    <br>
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required>
+    </br>
+    <br>
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" required>
+    </br>
+    <br>
+    <label for="body">Body Text:</label>
+    <textarea id="body" name="body" rows="8" cols="50"></textarea>
+    </br>
+    <br>
+    <label for="category">Category:</label>
+    <select id="category" name="category">
+      <option value="technology">HTML</option>
+      <option value="science">CSS</option>
+      <option value="business">PHP</option>
+      <option value="lifestyle">JavaScript</option>
+    </select>
+    </br>
+    <br>
+    <label for="insertionMethod">Insertion Method:</label>
+    <input type="radio" id="image" name="insertionMethod" value="image">
+    <label for="image">Image</label>
+
+    <input type="radio" id="video" name="insertionMethod" value="video">
+    <label for="video">Video</label>
+    </br>
+
+    <br>
+
+    <label for="imageUpload">Image Upload:</label>
+    <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+
+    <label for="videoURL">Video URL:</label>
+    <input type="text" id="videoURL" name="videoURL">
+    </br>
+    <button type="submit">Publish Article</button>
+  </form>
+
+</body>
+</html>

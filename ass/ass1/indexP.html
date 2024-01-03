@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Profile</title>
+</head>
+<body>
+  <h1>Create Profile</h1>
+
+  <form action="http://comp334.studentswebprojects.ritaj.ps/util/process.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="photo">Photo:</label>
+    <input type="file" id="photo" name="photo">
+    <br>
+    <label for="bio">Bio:</label>
+    <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+    <br>
+    <br>
+    <label for="interests">Interests:</label>
+    <br>
+    <input type="checkbox" id="coding" name="interests[]" value="coding">
+    <label for="coding">Coding</label>
+    <br>
+    <input type="checkbox" id="design" name="interests[]" value="design">
+    <label for="design">Design</label>
+    <br>
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="Palestine">Palestine</option>
+      <option value="Jordan">Jordan</option>
+      <option value="Egypt">Egypt</option>
+      <option value="Syria">Syria</option>
+      <option value="Lebanon">Lebanon</option>
+      <option value="USA">USA</option>
+      <option value="Australia">Australia</option>
+      <option value="UK">UK</option>
+    </select>
+    <br>
+    <label for="level">Level:</label>
+    <select id="level" name="level">
+      <option value="beginner">Beginner</option>
+      <option value="mid">Mid</option>
+      <option value="pro">Pro</option>
+    </select>
+    <br>
+    <input type="submit" value="Create profile">
+  </form>
+</body>
+</html>
